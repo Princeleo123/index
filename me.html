@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Button Popup</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        img.main {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .childhood {
+            position: absolute;
+            width: 120px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .child1 {
+            left: calc(40% - 160px); /* Adjusted distance from center */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .child2 {
+            left: calc(60% + 40px); /* Adjusted distance from center */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("I just want you to know that you make me feel like I matter. I appreciate everything that you do. I'm always thankful to have you hehe :>");
+        }
+    </script>
+</head>
+<body>
+    <img src="sds/bai/3607972e-8792-474f-8475-aec37f7e6a9b.jpg" alt="Main Image" class="main">
+    <button onclick="showMessage()">Click Me!</button>
+    <img src="sds/bai/5cfa2bcc-e647-469b-90c0-e9231765469a.jpg" alt="Childhood Picture 1" class="childhood child1">
+    <img src="sds/bai/1d60f5ba-59f7-492a-89e3-d00a0179376d.jpg" alt="Childhood Picture 2" class="childhood child2">
+</body>
+</html>
